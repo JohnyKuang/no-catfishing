@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NoCatfishing</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_passwrd">Forgot password?</string>
+    <string name="invalid_login_txt">Username or password incorrect</string>
+</resources>
