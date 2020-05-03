@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.johny.nocatfishing.ProfileActivity">
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:onClick="takePicture"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@drawable/rounded_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Swiping"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/rounded_btn"
+        android:onClick="backToSwipingButton"
+        />
+
+
+    <ImageView
+        android:id="@+id/temp_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/about_me_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/about_me_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/about_me_title"
+        android:text="Random shit here for now "
+        android:visibility="invisible"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf ="@+id/about_me_title"
+        android:text="Edit"
+        android:textSize="@dimen/text_small"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/about_me_content"
+        android:onClick="editText"
+        android:background="@drawable/rounded_btn"/>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf ="@+id/about_me_title"
+        android:text="Done"
+        android:textSize="@dimen/text_small"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/about_me_content"
+        android:onClick="doneBtn"
+        android:background="@drawable/rounded_btn"/>
+
+    <EditText
+        android:id="@+id/about_me_content_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/about_me_title"
+        android:visibility="invisible"
+        android:layout_marginStart="10dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capture_button"
+        app:layout_constraintBottom_toTopOf="@id/edit_btn"
+        tools:layout_editor_absoluteX="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save and Submit"
+        android:background="@drawable/rounded_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="saveUserInformation"
+        />
+
+</android.support.constraint.ConstraintLayout>

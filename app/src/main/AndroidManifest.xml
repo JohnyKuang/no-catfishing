@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.johny.nocatfishing">
 
-    <uses-feature android:name="android.hardware.camera"
+    <uses-feature
+        android:name="android.hardware.camera"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18"/>
-
-
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -33,18 +32,14 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths">
-            </meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
-        <activity android:name=".Home">
 
-        </activity>
-
+        <activity android:name=".Home" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".MatchesActivity" />
+        <activity android:name=".Chat.ChatActivity"></activity>
     </application>
 
-
-
-
-
 </manifest>
-

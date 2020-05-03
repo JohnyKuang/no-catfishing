@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "833733600469",
+    "firebase_url": "https://nocatfishing-f1ceb.firebaseio.com",
+    "project_id": "nocatfishing-f1ceb",
+    "storage_bucket": "nocatfishing-f1ceb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833733600469:android:d435e666450aad83",
+        "android_client_info": {
+          "package_name": "com.example.johny.nocatfishing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833733600469-dir6b02aju1ajsl1aopkei44l9otbbu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.johny.nocatfishing",
+            "certificate_hash": "7230217a6bcf241bb911fe98fae5067eec408938"
+          }
+        },
+        {
+          "client_id": "833733600469-csol4delnc10rb6jg3lrp5l910cb6dq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKsOOiYC47ZI33nQfpoOgEuyGwj6wckV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833733600469-csol4delnc10rb6jg3lrp5l910cb6dq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
